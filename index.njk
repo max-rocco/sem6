@@ -6,7 +6,7 @@ layout: layouts/home.njk
     <h1>Welcome to Sem6!</h1>
     <ul class="nav">
         {%- for subject in subjects.subjects %}
-            <li class="nav-item"><a class="nav-link" href="{{ subject | url }}">{{ subject }}</a></li>
+            <li class="nav-item"><a class="nav-link" href="/s/{{ subject | lower | url }}">{{ subject }}</a></li>
         {%- endfor %}
     </ul>
 </div>
