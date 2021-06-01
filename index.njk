@@ -4,9 +4,9 @@ layout: layouts/home.njk
 
 <div class="home-container">
     <h1>Welcome to Sem6!</h1>
-        <ul class="nav">
-            {%- for subject in subjects.subjects %}
-                <li class="nav-item"><a href="{{ subject | url }}">{{ subject }}</a></li>
-            {%- endfor %}
-        </ul>
+    <ul class="nav">
+        {%- for subject in subjects.subjects %}
+            <li class="nav-item"><a href="{{ subject | url }}">{{ subject }}</a></li>
+        {%- endfor %}
+    </ul>
 </div>
